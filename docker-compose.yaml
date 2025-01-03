@@ -1,0 +1,11 @@
+services:
+
+    simpledash:
+        image: securemindorg/simpledash:latest
+        container_name: simpledash
+        restart: unless-stopped
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./simpledash:/app/data/static
+
